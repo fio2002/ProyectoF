@@ -1,0 +1,15 @@
+.image-wall {
+    background-color:#4D66A9;
+    background-image: url("./img/fondoPrincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.full-container{
+    width: 100%;
+    height: 100em;
+}
+
+.color-wall{
+    background-color:#4D66A9;
+}

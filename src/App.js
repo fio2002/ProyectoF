@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import {BrowserRouter , Routes, Route} from 'react-router-dom'
+import React from 'react';
+import CompLogin from './Componentes/CompLogin'
+import CompPrincipal from "./Componentes/CompPrincipal"
 import './App.css';
+import CompRegistroForm from './Componentes/CompRegistroForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+   <Routes>
+   <Route path="/" element={<CompLogin/>} ></Route>
+      <Route path="/login" element={<CompLogin/>} ></Route>
+      <Route path="/registrar" element={<CompRegistroForm/>} ></Route>
+      <Route path="/home" element={<CompPrincipal/>} ></Route>
+   </Routes>
+      
+   </BrowserRouter>
+
+    
   );
 }
 
